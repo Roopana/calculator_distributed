@@ -33,7 +33,7 @@ For example, user A and user B go to your site at the same time. User A calculat
 
 Results remain between sessions. Only last 10 calculations descending from most recent to oldest are displayed the history
 
-# Limitations of the app:
+# Limitations of the app
 * The calculator can perform only +,-,x,/ operations
 * It can take values only in the range of double data type
 
