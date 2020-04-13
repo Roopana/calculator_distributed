@@ -16,10 +16,26 @@ Simple Calculator using Java Servlet with shared access to calculation history o
   
 * Java Servlet to build the UI (Running on TomCat Server)
 
-# Execution Steps
+# Execution Steps in IDE
 * Bring up the server by executing [CalcServer](https://github.com/Roopana/calculator_distributed_server/blob/master/src/sharedCalculator/CalcServer.java) file.
 * Run [webapp project](https://github.com/Roopana/calculator_client_webapp/tree/master/sharedCalculatorWebApp) on Tomcat. This display the GUI as shown in below screenshot.
 * To perform calculations, access the GUI through URL: http://localhost:8080/sharedCalculatorWebApp/index.jsp
+
+# Execution steps without IDE
+    Prerequiste softwares : Java, Tomcat(installation steps provided below) 
+### Server
+* Download server's executable [jar file](https://github.com/Roopana/calculator_client_webapp/blob/master/calcServer.jar) to run calculator server.
+* Run the server using java -jar calcServer.jar command in the run console/terminal.
+### Client
+* To run the client, Tomcat is required. If you dont have it installed, follow below steps for Tomcat installation:
+  * Download Tomcat from [here](https://tomcat.apache.org/download-90.cgi)
+  *	After downloading, unzip the folder and open terminal/console in the folder location
+  *	In terminal, run the command chmod +x ./bin/startup.sh to grant permissions
+  *	Run the command chmod +x ./bin/catalina.sh
+*	Once Tomcat is installed, Place war file[(sharedCalculatorWebApp.war)](https://github.com/Roopana/calculator_client_webapp/blob/master/sharedCalculatorWebApp.war) in _webapps_ folder of Tomcat
+* Start Tomcat using ./bin/startup.sh
+*	Open the URL: http://localhost:8080/sharedCalculatorWebApp/index.jsp to access the calculator
+
 
 # Screenshot of the UI
 
